@@ -1,0 +1,188 @@
+@import "_navigation.less";
+
+body{
+	font-family: "Microsoft Yahei";
+}
+
+.section{
+	display: table;
+	width: 100%;
+	.section_body{
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.uniform-title{
+	position: relative;
+	padding-top: 30px;
+	line-height: 60px;
+	text-align: center;
+	font-family: Arial;
+	span{
+		position: relative;
+		display: block;
+		z-index: 3;
+		font-size: 30px;
+		&:first-letter{
+			font-size: 2em;
+		}
+	}
+	&:before {
+		content: ' ';
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		top: 70px;
+		left: 0;
+		background: #aaa;
+		transform: rotate(-35deg);
+	}
+	&:after {
+		content: ' ';
+		position: absolute;
+		width: 50px;
+		height: 40px;
+		top: 50px;
+		left: 50%;
+		margin-left: -25px;
+		background: #fff;
+	}
+}
+/****/
+.sectionA{
+	text-align: center;
+	height: 500px;
+	background-image: url(../images/train_road.jpg);
+	background-position: center;
+}
+.sectionA h3{
+	color: #fff;
+	font-size: 100px;
+}
+.sectionA p{
+	color: #fff;
+	font-size: 14px;
+}
+/****/
+
+
+/****/
+.sectionB{
+	height: 500px;
+	.side{
+		float: left;
+		width: 200px;
+	}
+	.avatar{
+		width: 200px;
+		border-radius: 100%;
+		border: 2px solid #ececec;
+		overflow: hidden;
+	}
+	.text{
+		float: right;
+		width: 500px;
+		padding-top: 60px;
+		h3{
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.section-skill{
+	background: url(../images/red-bj.jpg) fixed repeat #f00;
+	.container{
+		position: relative;
+		padding: 100px 0 180px;
+	}
+	.skill-list{
+		height: 200px;
+	}
+	.skill-item{
+		float: left;
+		width: 25%;
+		.count{
+			text-align: center;
+			color: #fff;
+			font-size: 20px;
+		}
+	}
+	.skill-icon{
+		width: 150px;
+		height: 150px;
+		margin: auto;
+		background: url(../images/skin.png) 0 0;
+		text-align: center;
+		line-height: 150px;
+		font-size: 48px;
+		font-family: "宋体";
+		color: #db3d44;
+	}
+	.uniform-title{
+		position: absolute;
+		right: 10px;
+		bottom: 50px;
+		color: #fff;
+		&:before{
+			background: #fff;
+		}
+		&:after{
+			background: url(../images/red-bj.jpg) fixed repeat #f00;
+		}
+	}
+}
+
+.section-aboutme{
+	height: 400px;
+	.mouse{
+		float: right;
+		width: 430px;
+		height: 290px;
+		background: url(../images/mouse.png) no-repeat;
+	}
+	.text{
+		float: left;
+		width: 300px;
+		font-size: 14px;
+		color: #555;
+		.uniform-title{
+			width: 200px;
+			margin-top: 50px;
+		}
+	}
+}
+
+.section-design{
+	height: 450px;
+	background: url(../images/dark-bj.jpg) fixed repeat #f00;
+	.container{
+		position: relative;
+	}
+	.design-item{
+		width: 117px;
+		height: 117px;
+		margin: 0 3px 3px 0;
+		float: left;
+		background: #333;
+		&:nth-child(1),
+		&:nth-child(6){
+			float: none;
+			clear: left;
+			margin-left: 119px;
+		}
+	}
+	.uniform-title{
+		position: absolute;
+		right: 10px;
+		bottom: 20px;
+		color: #fff;
+		&:before{
+			background: #fff;
+		}
+		&:after{
+			background: url(../images/dark-bj.jpg) fixed repeat #f00;
+		}
+	}
+}
