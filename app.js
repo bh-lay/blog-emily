@@ -15,4 +15,4 @@ app.get('/', function (req, res) {
 		message: 'Hello there!'
 	});
 });
-app.listen(3000);
+app.listen(3002);
