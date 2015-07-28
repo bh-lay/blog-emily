@@ -23,6 +23,26 @@
 body {
   font-family: "Microsoft Yahei";
 }
+@keyframes rond {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rond {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.animation-rond {
+  -webkit-animation: rond 3s infinite linear;
+  animation: rond 3s infinite linear;
+}
 .section {
   display: table;
   width: 100%;
@@ -136,6 +156,11 @@ body {
   font-family: "宋体";
   color: #db3d44;
 }
+.section-skill .skill-icon:hover {
+  cursor: default;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
 .section-skill .uniform-title {
   position: absolute;
   right: 10px;
@@ -146,7 +171,7 @@ body {
   background: #fff;
 }
 .section-skill .uniform-title:after {
-  background: url(../images/red-bj.jpg) fixed repeat #ff0000;
+  background: url(../images/red-bj.jpg) fixed repeat;
 }
 .section-aboutme {
   height: 400px;
@@ -169,7 +194,7 @@ body {
 }
 .section-design {
   height: 450px;
-  background: url(../images/dark-bj.jpg) fixed repeat #ff0000;
+  background: url(../images/dark-bj.jpg) fixed repeat #3a3c3b;
 }
 .section-design .container {
   position: relative;
@@ -197,5 +222,5 @@ body {
   background: #fff;
 }
 .section-design .uniform-title:after {
-  background: url(../images/dark-bj.jpg) fixed repeat #ff0000;
+  background: url(../images/dark-bj.jpg) fixed repeat #3a3c3b;
 }
